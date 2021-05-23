@@ -1,0 +1,44 @@
+<%- include('partials/header'); -%>
+    <form action="/" method="POST">
+
+        <header>
+            <h1>Bitcoin Ticker</h1>
+            <p>Best platform to start your trading journey in this new era of bitcoin.</p>
+        </header>
+
+        <div class="form">
+        <div class="label25">
+            <label for="amount">Enter The Amount Which is to be Converted :</label>
+        </div>
+
+        <div class="input75">
+            <input type="text" name="amount" placeholder="Enter amount">
+        </div>
+        
+        <div class="label25"><label for="cryptoCurrency">Choose Your Crypto Currency: </label></div>
+
+        <div class="input75">
+        <select name="crypto" id="">
+            <option value="BTC">Bitcoin</option>
+            <option value="ETH">Ethereum</option>
+            <option value="LTC">Litecoin</option>
+            <option value="DOGE">Dogecoin</option>
+        </select>
+        </div>
+        
+        <div class="label25"><label for="cryptoCurrency">Choose Your Fiat Currency: </label></div>
+
+        <div class="input75">
+        <select name="fiat" id="">
+            <option value="USD">US Dollars</option>
+            <option value="INR">IND Rupees</option>
+            <option value="GBP">GB Pounds</option>
+            <option value="EUR">EU Euros</option>
+        </select>
+        </div>
+
+        
+        <button type="submit" name="check">Check</button>
+    </div>
+    </form>
+<%- include('partials/footer'); -%>
